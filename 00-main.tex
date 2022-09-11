@@ -1,4 +1,8 @@
 \documentclass[11pt,a4paper]{report}
+
+% ======================================================================
+% Packages Used
+% ======================================================================
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 %\usepackage[LFE,LAE]{fontenc}
@@ -17,13 +21,16 @@
 \usepackage{setspace}\doublespacing
 \usepackage[normalem]{ulem}
 \useunder{\uline}{\ul}{}
-
-
 \usepackage{subcaption} % for adding two figures side by side
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
-\usepackage{enumitem}
 
+% ======================================================================
+% Template Defined Commands
+% ======================================================================
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 \renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries}
 \renewcommand{\cftaftertoctitle}{\hfill\hfill}
@@ -32,7 +39,7 @@
 \renewcommand{\cftlottitlefont}{\hfill\Large\bfseries}
 \renewcommand{\cftafterlottitle}{\hfill}
 
-% names of supervsior and team
+% names of supervsior and team. These should be deifned once then used everywhere necessary.
 \newcommand{\supervisorname}{\textbf{Dr. FirstName LastName}}
 
 \newcommand{\firststudentname}{\textbf{Student\_FirstName Student\_LastName}}
@@ -41,8 +48,9 @@
 \newcommand{\secindstudentid}{\textbf{43xxxxxxxx}}
 
 
-\usepackage{fancyhdr}
- 
+% ======================================================================
+% Pages Setup
+% ======================================================================
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[LE,RO]{IT Department }
@@ -61,6 +69,9 @@
 \renewcommand{\cftaftertoctitle}{\hfill}
 
 
+% ======================================================================
+% Acronyms - This is a sample, you should define your own
+% ======================================================================
 \usepackage{acro}
 \acsetup{first-style=short}
 \DeclareAcronym{os}{
@@ -95,114 +106,82 @@
 }
 
 
+% ======================================================================
+% Document Starts Here
+% ======================================================================
 \begin{document}
 
-%\setcode{utf8}
 \begin{titlepage}
-\pagenumbering{gobble}
-
-% header
-\begin{center}
-\includegraphics[width=\textwidth]{figures/essentials/header.pdf}
-\end{center}
-
-\begin{center}
-\vspace{3cm}
-\huge
-\textbf{Project Title}
-%%%%%%\textbf{Face Recognition}
-
-\Large
-\vspace{3cm}
-\textit{Students:}\\
-\Large
-
-
-\begin{tabular}{lr}
-{\firststudentname} & {\firststudentid} \\
-{\secondstudentname} & {\secindstudentid}
-\end{tabular}
-
-\vspace{3cm}
-\Large
-\textit{Supervisor:}\\
-{\supervisorname}
-
-\end{center}
-\vfill
-\begin{center}	
-\textit{A project report submitted in partial fulfillment of the requirements \\
-for B.Sc. degree in Information Technology.}
-\vspace{5mm}
-
-\textit{Qassim-Saudi Arabia\\
-1442/1443 (2020/2021)}
-
-\end{center}
+  \pagenumbering{gobble}
+  
+  % header
+  \begin{center}
+    \includegraphics[width=\textwidth]{figures/essentials/header.pdf}
+  \end{center}
+  
+  % Project title
+  \begin{center}
+    \vspace{3cm}
+    \huge
+    \textbf{Project Title}
+    %%%%%%\textbf{Face Recognition}
+    
+    \Large
+    \vspace{3cm}
+    \textit{Students:}\\
+    \Large
+    
+    
+    \begin{tabular}{lr}
+      {\firststudentname}  & {\firststudentid}  \\
+      {\secondstudentname} & {\secindstudentid} 
+    \end{tabular}
+    
+    \vspace{3cm}
+    \Large
+    \textit{Supervisor:}\\
+    {\supervisorname}
+    
+  \end{center}
+  \vfill
+  \begin{center}  
+    \textit{A project report submitted in partial fulfillment of the requirements \\
+    for B.Sc. degree in Information Technology.}
+    \vspace{5mm}
+    
+    \textit{Qassim-Saudi Arabia\\
+    1444/1445 (2022/2023)}
+    
+  \end{center}
 \end{titlepage}
 \pagenumbering{gobble}
 
 \pagenumbering{roman}
- \vspace*{2cm}
+\vspace*{2cm}
 
-\begin{center}\section*{Certificate}\end{center}
-\addcontentsline{toc}{section}{Certificate}
-\begin{spacing}{1.5}
-It is certified that project report has been prepared and written under my direct supervision and guidance. The project report is approved for submission for its evaluation.
-\end{spacing}
-\begin{flushright}
-  {\supervisorname}
-\end{flushright}
+% DO NOT change the order of these pages!
+\input{00-prefatory-certificate}
+\input{00-prefatory-dedication}
+\input{00-prefatory-acknowledgement}
+\input{00-prefatory-abstract}
 
-\clearpage
- \vspace*{2cm}
-
-\begin{center}\section*{Dedication}\end{center}
-\addcontentsline{toc}{section}{Dedication}
-\begin{spacing}{1.5}
-It is certified that project report has been prepared and written under my direct supervision and guidance. The project report is approved for submission for its evaluation.
-\end{spacing}
-\begin{flushright}
-{\firststudentname} and {\secondstudentname}
-\end{flushright}
-
-\clearpage
- \vspace*{2cm}
-
-\begin{center}\section*{Acknowledgement}\end{center}
-\addcontentsline{toc}{section}{Acknowledgement}
-\begin{spacing}{1.5}
-I would like to thank Mr. A and Mr. B for the efforts that they provided for our team. I would like to thank Mr. A and Mr. B for the efforts that they provided for our team. I would like to thank Mr. A and Mr. B for the efforts that they provided for our team. I would like to thank Mr. A and Mr. B for the efforts that they provided for our team. I would like to thank Mr. A and Mr. B for the efforts that they provided for our team. 
-\end{spacing}
-\begin{flushright}
-{\firststudentname} and {\secondstudentname}
-\end{flushright}
-
-\clearpage
- \vspace*{2cm}
-\begin{center}\section*{Abstract}\end{center}
-\addcontentsline{toc}{section}{Abstract}
-\begin{spacing}{1.5}
-
-Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract.\\
-
-{\bf Keywords:} enter, keyword, here.
-
-\end{spacing}
-\clearpage
-
+% include the table of content then clear the page at the end
 \tableofcontents
 \clearpage
 
+% include the list of defined figures then clear the page
 \listoffigures
 \clearpage
 
+% include the list of tables then clear the page
 \listoftables
 \clearpage
+
+% include all the acronyms
 \printacronyms[include=abbrev,name=Abbreviations]
 \pagenumbering{gobble}
 
-
+% start with the actual content
 \pagebreak
 \pagenumbering{arabic}
 \include{01-introduction} 
@@ -213,18 +192,17 @@ Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract
 % \include{06-conclusion}
 
 
-
+% add appendix (if any)
 \begin{appendices}
-\chapter{Project Installation}
+  \chapter{Project Installation}
 \end{appendices}
-
 \clearpage
+
+% add the references cited
 \addcontentsline{toc}{chapter}{References}
 \bibliographystyle{IEEEtran} % try to use plain or apalike
 %https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles
 \nocite{*}
- \bibliography{ref.bib}
-% change the file name to line up with your bibtex file
-
+\bibliography{ref.bib}
 
 \end{document}
