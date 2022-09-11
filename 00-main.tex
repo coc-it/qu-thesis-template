@@ -1,0 +1,230 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[LFE,LAE]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{float}
+\usepackage[margin=1.in]{geometry}
+\usepackage{tocloft}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{rotating}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage[titletoc]{appendix}
+\usepackage{setspace}\doublespacing
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+
+
+\usepackage{subcaption} % for adding two figures side by side
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\usepackage{enumitem}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill\hfill}
+\renewcommand{\cftloftitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill}
+
+% names of supervsior and team
+\newcommand{\supervisorname}{\textbf{Dr. FirstName LastName}}
+
+\newcommand{\firststudentname}{\textbf{Student\_FirstName Student\_LastName}}
+\newcommand{\firststudentid}{\textbf{42xxxxxxxx}}
+\newcommand{\secondstudentname}{\textbf{Student\_FirstName Student\_LastName}}
+\newcommand{\secindstudentid}{\textbf{43xxxxxxxx}}
+
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{IT Department }
+\fancyhead[RE,LO]{Project Documentation Template}
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[CE,CO]{\thepage}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\addto{\captionsenglish}{%
+   \renewcommand{\bibname}{References}
+}
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Table of Contents}%
+}
+\renewcommand{\cftaftertoctitle}{\hfill}
+
+
+\usepackage{acro}
+\acsetup{first-style=short}
+\DeclareAcronym{os}{
+  short = OS ,
+  long  = Operating System ,
+  tag = abbrev
+}
+\DeclareAcronym{ai}{
+  short = AI ,
+  long  = Artificial Intelligent ,
+  tag = abbrev
+}
+\DeclareAcronym{dm}{
+  short = DM ,
+  long  = Data Mining ,
+  tag = abbrev
+}
+\DeclareAcronym{tcp}{
+  short = TCP ,
+  long  = Transmission Control Protocol ,
+  tag = abbrev
+}
+\DeclareAcronym{ml}{
+  short = ML ,
+  long  = Machine Learning ,
+  tag = abbrev
+}
+\DeclareAcronym{cnn}{
+  short = CNN ,
+  long  = Convolutional Neural Network ,
+  tag = abbrev
+}
+
+
+\begin{document}
+
+%\setcode{utf8}
+\begin{titlepage}
+\pagenumbering{gobble}
+
+% header
+\begin{center}
+\includegraphics[width=\textwidth]{figures/essentials/header.pdf}
+\end{center}
+
+\begin{center}
+\vspace{3cm}
+\huge
+\textbf{Project Title}
+%%%%%%\textbf{Face Recognition}
+
+\Large
+\vspace{3cm}
+\textit{Students:}\\
+\Large
+
+
+\begin{tabular}{lr}
+{\firststudentname} & {\firststudentid} \\
+{\secondstudentname} & {\secindstudentid}
+\end{tabular}
+
+\vspace{3cm}
+\Large
+\textit{Supervisor:}\\
+{\supervisorname}
+
+\end{center}
+\vfill
+\begin{center}	
+\textit{A project report submitted in partial fulfillment of the requirements \\
+for B.Sc. degree in Information Technology.}
+\vspace{5mm}
+
+\textit{Qassim-Saudi Arabia\\
+1442/1443 (2020/2021)}
+
+\end{center}
+\end{titlepage}
+\pagenumbering{gobble}
+
+\pagenumbering{roman}
+ \vspace*{2cm}
+
+\begin{center}\section*{Certificate}\end{center}
+\addcontentsline{toc}{section}{Certificate}
+\begin{spacing}{1.5}
+It is certified that project report has been prepared and written under my direct supervision and guidance. The project report is approved for submission for its evaluation.
+\end{spacing}
+\begin{flushright}
+  {\supervisorname}
+\end{flushright}
+
+\clearpage
+ \vspace*{2cm}
+
+\begin{center}\section*{Dedication}\end{center}
+\addcontentsline{toc}{section}{Dedication}
+\begin{spacing}{1.5}
+It is certified that project report has been prepared and written under my direct supervision and guidance. The project report is approved for submission for its evaluation.
+\end{spacing}
+\begin{flushright}
+{\firststudentname} and {\secondstudentname}
+\end{flushright}
+
+\clearpage
+ \vspace*{2cm}
+
+\begin{center}\section*{Acknowledgement}\end{center}
+\addcontentsline{toc}{section}{Acknowledgement}
+\begin{spacing}{1.5}
+I would like to thank Mr. A and Mr. B for the efforts that they provided for our team. I would like to thank Mr. A and Mr. B for the efforts that they provided for our team. I would like to thank Mr. A and Mr. B for the efforts that they provided for our team. I would like to thank Mr. A and Mr. B for the efforts that they provided for our team. I would like to thank Mr. A and Mr. B for the efforts that they provided for our team. 
+\end{spacing}
+\begin{flushright}
+{\firststudentname} and {\secondstudentname}
+\end{flushright}
+
+\clearpage
+ \vspace*{2cm}
+\begin{center}\section*{Abstract}\end{center}
+\addcontentsline{toc}{section}{Abstract}
+\begin{spacing}{1.5}
+
+Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract Abstract.\\
+
+{\bf Keywords:} enter, keyword, here.
+
+\end{spacing}
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\listoffigures
+\clearpage
+
+\listoftables
+\clearpage
+\printacronyms[include=abbrev,name=Abbreviations]
+\pagenumbering{gobble}
+
+
+\pagebreak
+\pagenumbering{arabic}
+\include{01-introduction} 
+\include{02-literature} 
+\include{03-methodology} 
+% \include{04-implementation}
+% \include{05-results}       
+% \include{06-conclusion}
+
+
+
+\begin{appendices}
+\chapter{Project Installation}
+\end{appendices}
+
+\clearpage
+\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{IEEEtran} % try to use plain or apalike
+%https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles
+\nocite{*}
+ \bibliography{ref.bib}
+% change the file name to line up with your bibtex file
+
+
+\end{document}
