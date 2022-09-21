@@ -1,3 +1,6 @@
+![PDFLaTeX Build](https://github.com/zalsaeed/qu-graduation-project-template/actions/workflows/latex-build.yml/badge.svg)
+------
+
 # Project Title
 
 This is the thesis repository for the graduation project template at Qassim University. All 498 students should use this template for consistency in the outputs. Currently, there are no guidelines on the changes allowed for the document theme. However, we recommend keeping it as it is (especially the configurations that help us read and comment on the report, such as the double-spaced lines).
