@@ -69,8 +69,14 @@ What to use to edit the latex document is up to you. Any suggestion we make here
 - [BibDesk](https://bibdesk.sourceforge.io/) [macOS]: A lightweight bib management application for mac just like JabRef.
 - [Mendeley](https://www.mendeley.com/) [Linux, macOS, Windows]: Mendeley might look appealing, but really recommend that you do NOT use it. In addition to been heavy, it usually updates your references automatically trying to help, but in fact it just confuses you.
 
+## New to LaTeX?
 
-## Revision History
+If you are new to LaTeX, then there might be a learning curve that you will go through (which is normal).
+To help you mitigate the time it could take you to be comfortable with LaTeX, here we provide some useful resources for beginners:
+- [A LaTeX Cheatsheet](https://wch.github.io/latexsheet/latexsheet.pdf): This is a two-page document that should help you find most of the basic keywords you need at a glance.
+- [StackExchange Tex Forum](https://tex.stackexchange.com/): This is a useful resource to search for specific tasks you want to do and have few answers. The forum can be the only resource you need if you know how to use it.
+
+# Revision History
 
 | Name          | Date          | Change Applied  |
 | ------------- |:--------------|:----------------|
