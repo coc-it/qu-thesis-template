@@ -30,7 +30,7 @@ jobs:
         with:
           root_file: 00-main.tex
       
-      - uses: actions/upload-artifact@v2
-        with:
-          name: PDF
-          path: 00-main.pdf
+#       - uses: actions/upload-artifact@v2
+#         with:
+#           name: PDF
+#           path: 00-main.pdf
