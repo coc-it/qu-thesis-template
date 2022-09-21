@@ -54,12 +54,20 @@ Consult you supervisor for having a copy on Overleaf.
 
 What to use to edit the latex document is up to you. Any suggestion we make here is an opinionated suggestion from our accumulative experiences. Thus, editors are not limited to the list below, but it is an attempt to help you set up everything faster.
 
+### LaTeX Editors
+
 - [macOS] [TexShop](https://pages.uoregon.edu/koch/texshop/): This is the default editor that comes with MacTex distribution.
 - [Windows] [TextPad](https://www.textpad.com/home): This a light weight latex editor for Windows and is usually shipped with most latex distributions.
-- [Linux, macOS] [Vim](https://www.vim.org/): Yes, vim! Simple is always good. 
+- [Linux, macOS] [Vim](https://www.vim.org/): Yes, vim! Simple is always good.
 - [Linux, macOS, Windows] [TexMaker](https://www.xm1math.net/texmaker/): Cross-platform editor. There are other such cross-platform editors, but this one is light weight while having all the essential features you might be looking for.
-- [macOS] [Sublime](https://www.sublimetext.com/): Again simple is good. This is for those who don't want to use vim but still want a simple editor.
-- [Windows] [notepad++](https://notepad-plus-plus.org/): Another light-weight editor example.
+- [macOS] [Sublime](https://www.sublimetext.com/): Again, simple is good. This is for those who don't want to use vim but still want a simple editor.
+- [Windows] [notepad++](https://notepad-plus-plus.org/): Another lightweight editor example.
+
+### Bibliography (.bib) Editors
+
+- [Linux, macOS, Windows] [JabRef](https://www.jabref.org/): cross-platforms bibliography management applications. Light weight and has the essential functionalities (e.g., import references from the web, classify the papers with reading status or importance, and tracking your review in comment section for each paper).
+- [macOS] [BibDesk](https://bibdesk.sourceforge.io/): A lightweight bib management application for mac just like JabRef.
+- [Linux, macOS, Windows] [Mendeley](https://www.mendeley.com/): Mendeley might look appealing, but really recommend that you do NOT use it. In addition to been heavy, it usually updates your references automatically trying to help, but in fact it just confuses you.
 
 
 ## Revision History
