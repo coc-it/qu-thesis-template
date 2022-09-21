@@ -1,5 +1,4 @@
-![PDFLaTeX Build](https://github.com/zalsaeed/qu-graduation-project-template/actions/workflows/latex-build.yml/badge.svg)
-------
+[![PDFLaTeX Build](https://github.com/zalsaeed/qu-graduation-project-template/actions/workflows/latex-build.yml/badge.svg)](https://github.com/zalsaeed/qu-graduation-project-template/actions/workflows/latex-build.yml)
 
 # Project Title
 
