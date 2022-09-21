@@ -29,3 +29,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: 00-main.tex
+      
+      - uses: actions/upload-artifact@v2
+        with:
+          name: PDF
+          path: main.pdf
