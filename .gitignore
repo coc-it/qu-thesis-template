@@ -303,3 +303,6 @@ TSWLatexianTemp*
 # Mac based files
 .DS_Store
 *.pdf
+
+# JabRef files
+*.bib.sav.tmp
