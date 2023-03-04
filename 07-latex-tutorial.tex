@@ -47,11 +47,11 @@
 \label{sec:using_lists}
 % ============================================================
 
-There are many ways to creating a list. In this section we show some of the most common examples and uses of lists. Remember, the sky is the limit.
+There are many ways to create a list. This section shows some of the most common examples and uses of lists. Remember, the sky is the limit.
 
 \subsubsection{Simple Bullet Point List}
 
-For simple bullet points you use \verb|itemize| within a begin and end tags. 
+For simple bullet points, you use \verb|itemize| within the begin and end tags. 
 
 \begin{itemize}
     \item first item.
@@ -61,7 +61,7 @@ For simple bullet points you use \verb|itemize| within a begin and end tags.
 
 \subsubsection{Bullet Point List With Different Symbols}
 
-We can change the bullet symbol as wee need by defining the symbol we use for each item.
+We can change the bullet symbol as we need by defining the symbol we use for each item.
 
 \begin{itemize}     
     \item[\textbullet] first item.
@@ -81,7 +81,7 @@ If we want to have a numbered list we use the \verb|\begin{enumerate}| \verb|...
 
 \subsubsection{Custom Numbered List}
 
-We can define the list numbering as we want. For example, sometimes we need to have a list of specific type like in the requirements gathering step. Hence, we say the first item should be named \emph{REQ-1}, and the second should be \emph{REQ-2} and so on. To get such numbered list we define a custom label as we need given the example below. 
+We can define the list numbering as we want. For example, sometimes we need to have a list of specific types, like in the requirements gathering step. Hence, we say the first item should be named \emph{REQ-1}, the second should be \emph{REQ-2}, and so on. To get such numbered list, we define a custom label as we need as given in the example below.
 
 \begin{enumerate}[label=\textbf{REQ-\arabic*:}]
     \item first item.
@@ -107,7 +107,7 @@ We can change the spacing between the symbol and the text and between each item 
 \label{sec:dealing_with_figures}
 % ============================================================
 
-A figure is any content wrapped between \verb|\begin{figure}| and \verb|\end{figure}|. A figure (or any floating object) can have different options. However, we think the most important one that we should share with you is the positioning option of the figure. Each figure can be placed somewhere in a page by adding the position option after the begin keyword \verb|\begin{figure}[h]|. The list of positioning options and there meaning are given in Table-\ref{tab:position-options}.
+A figure is any content wrapped between \verb|\begin{figure}| and \verb|\end{figure}|. A figure (or any floating object) can have different options. However, we think the most important one that we should share with you is the positioning option of the figure. Each figure can be placed somewhere on a page by adding the position option after the begin keyword \verb|\begin{figure}[h]|. The list of positioning options and their meaning are given in Table-\ref{tab:position-options}.
 
 \begin{table}[h!]
     \centering
@@ -128,7 +128,7 @@ A figure is any content wrapped between \verb|\begin{figure}| and \verb|\end{fig
 
 \subsection{Simple Figure}
 
-Adding a figure simply require you to point {\LaTeX} to the image/pdf file location inside a \verb|\begin{figure}| \verb|...| \verb|\end{figure}| environment. The figure below (Figure-\ref{ref:simple-figure}) include an image in a file located in \verb|figures/samples/earth-in-space.jpg|. We do not resize the image or change any of its attributes. Also, we use the option \verb|H| to place the figure right after this text.
+Adding a figure simply requires you to point {\LaTeX} to the image/pdf file location inside a \verb|\begin{figure}| \verb|...| \verb|\end{figure}| environment. The figure below (Figure-\ref{ref:simple-figure}) includes an image in a file located in \verb|figures/samples/earth-in-space.jpg|. We do not resize the image or change any of its attributes. Also, we use the option \verb|H| to place the figure right after this text.
 
 
 \begin{figure}[H]
@@ -142,7 +142,7 @@ Adding a figure simply require you to point {\LaTeX} to the image/pdf file locat
 
 \subsection{Re-sized Figure}
 
-You couldn't see the full image above right. That is because we didn't control the size of the image in Figure-\ref{ref:simple-figure}. We will repeat the same code we used with the figure above but this time we add the \verb|[width=0.5\linewidth]| in front of the \verb|\includegraphics| command. This means the new figure width (Figure\ref{ref:resized-figure}) is resized be equal to 50\% of the \verb|linewidth| size. The \verb|linewidth| is defined by the document itself and you have no control over what the \verb|linewidth| is. I.e., we are telling {\LaTeX} to put the image in Figure-\ref{ref:resized-figure} and make its width equal to half the allowed line width. 
+You could not see the full image above, right? That is because we did not control the image size in Figure-\ref{ref:simple-figure}. We will repeat the same code we used with the figure above, but this time we add the \verb|[width=0.5\linewidth]| in front of the \verb|\includegraphics| command. This means the new figure width (Figure\ref{ref:resized-figure}) is resized to be equal to 50\% of the \verb|linewidth| size. The \verb|linewidth| is defined by the document itself, and you have no control over what the \verb|linewidth| is. I.e., we are telling {\LaTeX} to put the image in Figure-\ref{ref:resized-figure} and make its width equal to half the allowed line width.
 
 \begin{figure}[H]
     \begin{center}
@@ -154,9 +154,9 @@ You couldn't see the full image above right. That is because we didn't control t
 
 \subsection{Using Subfigures}
 
-Sometimes the figures we want to add are a collection of images instead of a single image. And we want to add all of these images under a single \verb|\begin{figure}| \verb|...| \verb|\end{figure}| environment. We do this by using \verb|\begin{subfigure}| \verb|...| \verb|\end{subfigure}| inside of the figure environment for each sub-figure. The code is self explanatory, but we should point out the use of \verb|\hfill| and \verb|~|. We use \verb|\hfill| to tell {\LaTeX} to fill the rest of the horizantal space and start from the begining of the line. Thus, you see we use it between Figure-\ref{fig:sub-top-rigth} and Figure-\ref{fig:sub-bottom-left}. And the symbol \verb|~| is used to tell {\LaTeX} that we have two distinct objects. Therefore, {\LaTeX} will know that one has ended and another one is about to start. The symbol can be seen in use between Figure-\ref{fig:sub-top-left} and Figure-\ref{fig:sub-top-rigth}. Also, between Figure-\ref{fig:sub-bottom-left} and Figure-\ref{fig:sub-bottom-right}. 
+Sometimes the figures we want to add are a collection of images instead of a single image. And we want to add all these images under a single \verb|\begin{figure}| \verb|...| \verb|\end{figure}| environment. We do this by using \verb|\begin{subfigure}| \verb|...| \verb|\end{subfigure}| inside the figure environment for each sub-figure. The code is self-explanatory, but we should point out the use of \verb|\hfill| and \verb|~|. We use \verb|\hfill| to tell {\LaTeX} to fill the rest of the horizontal space and start from the beginning of the line. Thus, we use it between Figure-\ref{fig:sub-top-rigth} and Figure-\ref{fig:sub-bottom-left}. And the symbol \verb|~| is used to tell {\LaTeX} that we have two distinct objects. Therefore, {\LaTeX} will know that one has ended and another is about to start. The symbol can be seen between Figure-\ref{fig:sub-top-left} and Figure-\ref{fig:sub-top-rigth}. Also, between Figure-\ref{fig:sub-bottom-left} and Figure-\ref{fig:sub-bottom-right}.
 
-Another thing we should note is the sizing configuration. With each \verb|\begin{subfigure}| \verb|...| \verb|\end{subfigure}| environment you can see that we say its size is \verb|{.45\textwidth}|, which means 45\% of the line width size. However, also for each \verb|\includegraphics| command we say \verb|[width=\linewidth]| without any percentage value, because the line width value now is already minimized to 45\% of its original size as long as we are withing the \verb|\begin{subfigure}| \verb|...| \verb|\end{subfigure}| environment we defined. 
+Another thing we should note is the sizing configuration. With each \verb|\begin{subfigure}| \verb|...| \verb|\end{subfigure}| environment you can see that we say its size is \verb|{.45\textwidth}|, which means 45\% of the line width size. However, also for each \verb|\includegraphics| command we say \verb|[width=\linewidth]| without any percentage value because the line width value now is already minimized to 45\% of its original size as long as we are within the \verb|\begin{subfigure}| \verb|...| \verb|\end{subfigure}| environment we defined.
 
 \begin{figure}[H]
     \centering
@@ -194,7 +194,7 @@ Another thing we should note is the sizing configuration. With each \verb|\begin
 
 \subsection{Rotated Figure}
 
-Sometimes we need to make a figure show in a side way position. For that we need to use a special floating environment named  \verb|\begin{sidewaysfigure}| \verb|...| \verb|\end{sidewaysfigure}|. Figure-\ref{fig:rotated-figure} show an example of the use of the \verb|sidewaysfigure| environment. 
+Sometimes we need to make a figure show in a sideway position. For that we need to use a special floating environment named  \verb|\begin{sidewaysfigure}| \verb|...| \verb|\end{sidewaysfigure}|. Figure-\ref{fig:rotated-figure} show an example of the use of the \verb|sidewaysfigure| environment.
 
 \clearpage
 \begin{sidewaysfigure}
@@ -208,7 +208,7 @@ Sometimes we need to make a figure show in a side way position. For that we need
 
 \subsection{Using PNG vs. PDF Images}
 
-With the figure environment, you can either PNG/JPG or PDF based images. You should use what you have, but whenever possible, we recommend you use a PDF based image/chart. The reason a PDF is better than PNG (or any other fixed imaged type), is that the resolution with a PDF scales much better than other types. Take Figure-\ref{ref:pdf-based} as an example and compare it to the image in Figure-\ref{ref:png-based}. If you zoom-in into the PDF based figure you will see it scales better than the PNG based image. 
+With the figure environment, you can either PNG/JPG or PDF-based images. You should use what you have, but whenever possible, we recommend you use a PDF-based image/chart. The reason a PDF is better than PNG (or any other fixed imaged type), is that the resolution with a PDF scales much better than other types. Take Figure-\ref{ref:pdf-based} as an example and compare it to the image in Figure-\ref{ref:png-based}. If you zoom-in on the PDF-based figure you will see it scales better than the PNG-based image.
 
 
 \begin{figure}[H]
@@ -234,13 +234,13 @@ With the figure environment, you can either PNG/JPG or PDF based images. You sho
 \label{sec:dealing_with_tables}
 % ============================================================
 
-Tables with {\LaTeX} are highly customizable. You can achieve any layout you want as you will see in this section. However, tables also can be intimidating the first time you use them with {\LaTeX}. Therefore, we recommend you to use {\LaTeX} table building tools to start with the main body of the table then you customize it as you need. There are different tools out there, but a popular one could be \href{https://www.tablesgenerator.com/}{https://www.tablesgenerator.com/}.
+Tables with {\LaTeX} are highly customizable. You can achieve any layout you want as you will see in this section. However, tables also can be intimidating the first time you use them with {\LaTeX}. Therefore, we recommend you use {\LaTeX} table-building tools to start with the main body of the table and then customize it as you need. There are different tools out there, but a popular one could be \href{https://www.tablesgenerator.com/}{https://www.tablesgenerator.com/}.
 
-Next, we share few common tables layouts broken by sub-sections as given below.
+Next, we share a few common table layouts broken by subsections as given below.
 
 \subsection{Simple Table}
 
-The example given in Table-\ref{tab:simple-table} is for the basic table layout. The table does not have any boarders. All it has is just content broken by 3 columns and 4 rows. The table environment is given by \verb|\begin{table}| \verb|...| \verb|\end{table}|. And the content of the table itself is wrapped inside the \verb|\begin{tabular}| \verb|...| \verb|\end{tabular}| environment. Notice that after the \verb|\begin{tabular}| we add \verb|{lll}|, for which each letter correspond to the a column in the table and the letter \emph{l} in this case means align text to the left for each column.
+The example given in Table-\ref{tab:simple-table} is for the basic table layout. The table does not have any borders. All it has is just content broken into 3 columns and 4 rows. The table environment is given by \verb|\begin{table}| \verb|...| \verb|\end{table}|. And the content of the table itself is wrapped inside the \verb|\begin{tabular}| \verb|...| \verb|\end{tabular}| environment. Notice that after the \verb|\begin{tabular}| we add \verb|{lll}|, for which each letter corresponds to the column in the table, and the letter \emph{l} in this case means align text to the left for each column.
 
 \begin{table}[H]
     \centering
@@ -257,7 +257,7 @@ The example given in Table-\ref{tab:simple-table} is for the basic table layout.
 
 \subsection{All Boarders Table}
 
-The table in this section (Table-\ref{tab:simple-table-all-boarders}) is exactly same as the table in the previous section (Table-\ref{tab:simple-table}). However, this time we add all boarders. For vertical lines, we updated the columns \verb|{lll}| by adding the symbol \emph{|} between all the letters which says we need a border line to the left of the first column, the right of the first column and so on. Also, we used \verb|\hline| at the end of each row which say draw a horizontal line. With these changes only we have full boarders. 
+The table in this section (Table-\ref{tab:simple-table-all-boarders}) is exactly the same as the table in the previous section (Table-\ref{tab:simple-table}). However, this time we add all borders. For vertical lines, we updated the columns \verb|{lll}| by adding the symbol \emph{|} between all the letters which say we need a borderline to the left of the first column, the right of the first column, and so on. Also, we used \verb|\hline| at the end of each row which to draw a horizontal line. With these changes only we have full boarders.
 
 \begin{table}[H]
     \centering
@@ -275,7 +275,7 @@ The table in this section (Table-\ref{tab:simple-table-all-boarders}) is exactly
 
 \subsection{A Beautified Version of the Simple Table}
 
-Now you should be able to understand the basic settings that you can update to change how the table looks. In Table-\ref{tab:simple-table-beautified} we show a sample of a layout that makes the table easy to read and looks acceptable. You can change the boarders and alignment however you see fit to your case. But always think about the reader and how you could make their task in reading the tables easier.
+Now you should be able to understand the basic settings that you can update to change how the table looks. In Table-\ref{tab:simple-table-beautified} we show a sample of a layout that makes the table easy to read and looks acceptable. You can change the borders and alignment however you see fit in your case. But always think about the reader and how you could make their task of reading the tables easier.
 
 \begin{table}[H]
     \centering
@@ -293,9 +293,9 @@ Now you should be able to understand the basic settings that you can update to c
 \subsection{A Table with a Wrapped Text}
 
 
-Sometimes you would have a table with a very long text in each row. The simple tables we shared previously will go beyond the page boarders as shown in Table-\ref{tab:over-boarder-table}. To make sure the table stays within the page boarder in the case of long text, you need to specify the table size. The trick can simply be by changing the alignments of the text on each column from general alignment as seen in Table-\ref{tab:over-boarder-table} (\verb|\begin{tabular}|\verb|{llll}|) to be based on the page defined margins as seen in Table-\ref{tab:wrapped-table} (\verb|\begin{tabular}| \verb|{p{0.15\textwidth}| \verb|p{0.05\textwidth}| \verb|p{0.05\textwidth}| \verb|p{0.6\textwidth}}|).
+Sometimes you would have a table with a very long text in each row. The simple tables we shared previously will go beyond the page borders as shown in Table-\ref{tab:over-boarder-table}. To make sure the table stays within the page border in the case of long text, you need to specify the table size. The trick can simply be by changing the alignments of the text on each column from general alignment as seen in Table-\ref{tab:over-boarder-table} (\verb|\begin{tabular}|\verb|{llll}|) to be based on the page defined margins as seen in Table-\ref{tab:wrapped-table} (\verb|\begin{tabular}| \verb|{p{0.15\textwidth}| \verb|p{0.05\textwidth}| \verb|p{0.05\textwidth}| \verb|p{0.6\textwidth}}|).
 
-The new column definitions simply specify the space each column is allowed. Starting from the left, the first column is allowed 15\% of the text-width, the second and third columns are allowed 5\% of the text-width each, and the last column is allowed 60\% of the text-width. Given these definitions, {\LaTeX} will find a way to break the text each time it reach the allowed size limit for each column.
+The new column definitions simply specify the space each column is allowed. Starting from the left, the first column is allowed 15\% of the text-width, the second and third columns are allowed 5\% of the text-width each, and the last column is allowed 60\% of the text-width. Given these definitions, {\LaTeX} will find a way to break the text each time it reaches the allowed size limit for each column.
 
 
 \begin{table}[H]
@@ -327,7 +327,7 @@ The new column definitions simply specify the space each column is allowed. Star
 
 \subsection{A Table Spanning Multiple Pages}
 
-It is sometimes possible that you will have a table with many rows for which you cannot fit them in one page. The simple \verb|\begin{table}| \verb|...| \verb|\end{table}| environment will not help in breaking the table over multiple pages. There is a custom environment named \verb|\begin{longtable}| \verb|...| \verb|\end{longtable}| that deals with such cases. Table-\ref{tab:long-table} shows an example of a table with 51 rows. We did not specify when the table should be broken into pages. All we did is wrapped the information inside the \emph{longtable} environment with few definitions that makes reading the table easier for the reader. 
+It is sometimes possible that you will have a table with many rows for which you cannot fit them on one page. The simple \verb|\begin{table}| \verb|...| \verb|\end{table}| environment will not help in breaking the table over multiple pages. There is a custom environment named \verb|\begin{longtable}| \verb|...| \verb|\end{longtable}| that deals with such cases. Table-\ref{tab:long-table} shows an example of a table with 51 rows. We did not specify when the table should be broken into pages. All we did is wrapped the information inside the \emph{longtable} environment with few definitions that make reading the table easier for the reader.
 
 \clearpage
 \begin{longtable}{|c|c|c|c|}
@@ -425,7 +425,7 @@ In the case you have a large table that you want to contain in one page and the 
 \label{sec:adding_references}
 % ============================================================
 
-One of the essential properties of research writing or a project report is to have a well organized document in terms of references. There are two types of reference. First, references to an outside source which are called bibliography. These are the papers, books, web-pages, you have read and would like to reference. Second, you have what is called cross-references. These are references to sections, figures, tables, etc. within your document. We explain the bibliography references in Section-\ref{sub:managing_and_referencing_bibliography} and the cross-references in Section-\ref{sub:cross_referencing}.
+One of the essential properties of research writing or a project report is to have a well-organized document in terms of references. There are two types of reference. First, references to an outside source are called a bibliography. These are the papers, books, and webpages, you have read and would like to reference. Second, you have what is called cross-references. These are references to sections, figures, tables, etc. within your document. We explain the bibliography references in Section-\ref{sub:managing_and_referencing_bibliography} and the cross-references in Section-\ref{sub:cross_referencing}.
 
 
 % ------------------------------------------------------------
@@ -433,7 +433,7 @@ One of the essential properties of research writing or a project report is to ha
 \label{sub:managing_and_referencing_bibliography}
 % ------------------------------------------------------------
 
-There are different types of publications that you can read and cite. In this tutorial, we do not dive into the details of how citation should be properly used scientifically. We only show samples of different publication types and how you can use {\LaTeX} to cite them. The publication types include but not limited to the following list:
+There are different types of publications that you can read and cite. In this tutorial, we do not dive into the details of how citations should be properly used scientifically. We only show samples of different publication types and how you can use {\LaTeX} to cite them. The publication types include but are not limited to the following list:
 
 \begin{itemize}
     \item @article
@@ -461,11 +461,11 @@ There are different types of publications that you can read and cite. In this tu
     \item @unpublished
 \end{itemize}
 
-Regardless of the different types of publications, you first need to have a file where you keep all the references. In our case, the file is stored under the name \texttt{ref.bib}. If you open that file whether in a text-editor or a dedicated application for bibliography management (e.g., JabRef), you will get a list of publication information. 
+Regardless of the different types of publications, you first need to have a file where you keep all the references. In our case, the file is stored under the name \texttt{ref.bib}. If you open that file whether, in a text editor or a dedicated application for bibliography management (e.g., JabRef), you will get a list of publication information.
 
-Each publication type has some essential information that must be added to the reference entry. However, the most essential entry for {\LaTeX} to work, is the reference key. The example shown in Listing-\ref{lst:simple-listing} is for a conference paper (the type is @article) and has a reference key set to ``\texttt{Mnih:AtariRL:13}''. All the other entries are details of the reference we added. For example, the \verb|author| key has a list of all the authors who published the paper, \verb|title| stores the paper title, etc. These details can be different based on the reference type (e.g., article, book, inproceedings, etc). 
+Each publication type has some essential information that must be added to the reference entry. However, the most essential entry for {\LaTeX} to work, is the reference key. The example shown in Listing-\ref{lst:simple-listing} is for a conference paper (the type is @article) and has a reference key set to ``\texttt{Mnih:AtariRL:13}''. All the other entries are details of the reference we added. For example, the \verb|author| key has a list of all the authors who published the paper, \verb|title| stores the paper title, etc. These details can be different based on the reference type (e.g., article, book, inproceedings, etc).
 
-The main takeaway from Listing-\ref{lst:simple-listing} we would like to point, is the reference key\\(``\texttt{Mnih:AtariRL:13}''). This is a key that you define. We recommend following a pattern to make it easier to find references. In our case, we use the first author last name, a hint from the paper title, and then the last two digits from the year in which the reference was published. Thus, if we put the key in a cite keyword within {\LaTeX} (e.g., \verb|\cite{Mnih:AtariRL:13}|), {\LaTeX} will populate a key for it and show the reference information in the reference list \cite{Mnih:AtariRL:13} (click on the reference for it to take you to the reference information). 
+The main takeaway from Listing-\ref{lst:simple-listing} we would like to point out, is the reference key\\(``\texttt{Mnih:AtariRL:13}''). This is a key that you define. We recommend following a pattern to make it easier to find references. In our case, we use the first author's last name, a hint from the paper title, and then the last two digits from the year in which the reference was published. Thus, if we put the key in a cite keyword within {\LaTeX} (e.g., \verb|\cite{Mnih:AtariRL:13}|), {\LaTeX} will populate a key for it and show the reference information in the reference list \cite{Mnih:AtariRL:13} (click on the reference for it to take you to the reference information).
 
 \begin{lstlisting}[language=BibTex,style=mystyle,caption={Sample BibTex Reference Entry},label={lst:simple-listing}]
 @article{Mnih:AtariRL:13,
@@ -488,9 +488,9 @@ The main takeaway from Listing-\ref{lst:simple-listing} we would like to point, 
 
 \subsubsection{Citing Research Papers}
 
-Research paper can be of different types based on where are they published. The digital-library you are using to obtain the paper should have the correct classification. Nevertheless, research papers are usually \emph{@article}, \emph{@conference}, or \emph{@inproceedings}. 
+The research papers can be of different types based on where are they published. The digital library you are using to obtain the paper should have the correct classification. Nevertheless, research papers are usually \emph{@article}, \emph{@conference}, or \emph{@inproceedings}.
 
-What is more important is the pieces of details that are usually shouldn't be missing. To make it easier we put these in a table (Table-\ref{tab:rp-properties}). Please note that you could have more details but the ones listed in the table are usually a MUST.
+What is more important is the pieces of details that usually should not be missing. To make it easier we put these in a table (Table-\ref{tab:rp-properties}). Please note that you could have more details but the ones listed in the table are usually a MUST.
 
 \begin{table}[H]
     \centering
@@ -509,15 +509,15 @@ What is more important is the pieces of details that are usually shouldn't be mi
     \label{tab:rp-properties}
 \end{table}
 
-We composed a sample of well known papers to show you and example of the different citation. The first papers is for Alen Turing, one of the computer science founders. In it, Turing introduced the concept of a Turing Machine, which is a mathematical model of computers \cite{Turing:Computable:36}. Chang et al., \cite{Chang:Bigtable:08} established the foundation of the map-reduce technique that runs the internet now. 
+We composed a sample of well-known papers to show you and example of the different citations. The first paper is for Alen Turing, one of the computer science founders. In it, Turing introduced the concept of a Turing Machine, which is a mathematical model of computers \cite{Turing:Computable:36}. Chang et al., \cite{Chang:Bigtable:08} established the foundation of the map-reduce technique that runs the internet now.
 
-In a different subject, Volodymyr et al., \cite{Mnih:AtariRL:13} introduced a the merge between deep learning and reinforcement learning to allow computers teach themselves how to play games. And Sutskever et al., \cite{Sutskever:SeqToSeq:14}, illustrated a translation technique using neural networks.
+In a different subject, Volodymyr et al., \cite{Mnih:AtariRL:13} introduced a merge between deep learning and reinforcement learning to allow computers to teach themselves how to play games. And Sutskever et al., \cite{Sutskever:SeqToSeq:14}, illustrated a translation technique using neural networks.
 
-The four papers above are a representation of different research papers from different eras. Also, they differ in being published in journals and/or conferences. We wish that you could take a look at these sample and use them as reference for any issue you might encounter. 
+The four papers above are a representation of different research papers from different eras. Also, they differ in being published in journals and/or conferences. We wish that you could take a look at these samples and use them as reference for any issue you might encounter.
 
 \subsubsection{Citing Books}
 
-Books are similar to research paper in almost everything except they do not require a link. Table-\ref{tab:book-properties} shows the essential properties you should have in a book reference. 
+Books are similar to research papers in almost everything except they do not require a link. Table-\ref{tab:book-properties} shows the essential properties you should have in a book reference.
 
 \begin{table}[H]
     \centering
@@ -536,7 +536,7 @@ Books are similar to research paper in almost everything except they do not requ
     \label{tab:book-properties}
 \end{table}
 
-And example book we added is for Donald Knuth \cite{Knuth:Typesetting:86}. This is a book about {\LaTeX}. Listing-\ref{lst:book-bibtex} shows the BibTex entry we used. 
+An example book we added is for Donald Knuth \cite{Knuth:Typesetting:86}. This is a book about {\LaTeX}. Listing-\ref{lst:book-bibtex} shows the BibTex entry we used.
 
 \begin{lstlisting}[language=BibTex,style=mystyle,caption={Sample BibTex Reference for A Book},label={lst:book-bibtex}]
 @book{Knuth:Typesetting:86,
@@ -553,7 +553,7 @@ And example book we added is for Donald Knuth \cite{Knuth:Typesetting:86}. This 
 
 \subsubsection{Citing Web-Pages}
 
-Web pages are another type of references that you might add. An essential different in citing web pages is to indicate when did you visit the web pages. Because web pages are subject to change, you need to record when did you visit the page and obtained the information you rely on. 
+Web pages are another type of reference that you might need to add. An essential different in citing web pages is to indicate when did you visit the web pages. Because web pages are subject to change, you need to record when did you visit the page and obtained the information you rely on.
 
 Another difference when dealing with webpages is that they do not have an explicit type in the BibTex referencing system. Most commonly, people use the type \emph{@misc} to add a reference to a webpage. Table-\ref{tab:webpage-properties} shows the essential properties you have to add when citing a webpage. 
 
@@ -590,7 +590,7 @@ As an example, we used our college webpage \cite{coc:23} as a reference. The ent
 \label{sub:cross_referencing}
 % ------------------------------------------------------------
 
-Cross-referencing is much easier than referencing bibliography. You only need two things.
+Cross-referencing is much easier than referencing a bibliography. You only need two things.
 
 \begin{enumerate}
     \item Add a label to any part in the document you want to reference. Labels are easily added by using the keyword \verb|\label{your_key}|.
@@ -611,17 +611,16 @@ Here are some cross-references that you can test.
 \label{sec:mathematical_mode}
 % ============================================================
 
-One of the well known strengths of {\LaTeX} is the ease and comprehensibility of writing mathematical notations. In this section we show the two cases of writing in mathematical mode. (In line as shown in Section-\ref{sub:using_mathematical_notations} and equations as shown in Section-\ref{sub:writing_mathematical_equations}).
+One of the well-known strengths of {\LaTeX} is the ease and comprehensibility of writing mathematical notations. In this section, we show the two cases of writing in mathematical mode. (Inline as shown in Section-\ref{sub:using_mathematical_notations} and equations as shown in Section-\ref{sub:writing_mathematical_equations}).
 
 Please note that we do not cover all the possible symbols and math forms in this section. This is just a tutorial to get you started. A good reference for mathematical writing can be found in \href{https://www1.cmc.edu/pages/faculty/aaksoy/latex/latexthree.html}{https://www1.cmc.edu/pages/faculty/aaksoy/latex/latexthree.html}.
-
 
 % ------------------------------------------------------------
 \subsection{Using Mathematical Notations}
 \label{sub:using_mathematical_notations}
 % ------------------------------------------------------------
 
-Writing mathematical notation inline with {\LaTeX} require you to wrap the mathematical symbols between one of the following wrappers. 
+Writing mathematical notation inline with {\LaTeX} requires you to wrap the mathematical symbols between one of the following wrappers.
 
 \begin{itemize}
     \item \verb|\( ... \)|
@@ -631,16 +630,16 @@ Writing mathematical notation inline with {\LaTeX} require you to wrap the mathe
 
 
 \begin{lstlisting}[language=Tex,style=mystyle,caption={Sample Paragraph with Inline Math Equations},label={lst:inline-math}]
-This is an example of an inline math equations. This first example, $\sqrt{3}$, uses dollar signs to write an equation and it shows a square root. The second example here, \(E=mc^2\), uses parentheses to write an equation and shows the mass-energy equivalence formula. The last example we show, \begin{math} P: \widehat{G} \rightarrow G \end{math}, uses {\LaTeX} math keyword to write a G with wide hat and an arrow symbol. 
+These are examples of inline math equations. This first example, $\sqrt{3}$, uses dollar signs to write an equation and it shows a square root. The second example here, \(E=mc^2\), uses parentheses to write an equation and shows the mass-energy equivalence formula. The last example we show, \begin{math} P: \widehat{G} \rightarrow G \end{math}, uses {\LaTeX} math keyword to write a G with a wide hat and an arrow symbol. 
 
-Regardless of the wrapper you use the result will always be the same. 
+Regardless of the wrapper, you use the result will always be the same.
 \end{lstlisting}
 
-The {\LaTeX} input shown in Listing-\ref{lst:inline-math} above will result in the text shown below when we typeset it. 
+The {\LaTeX} input shown in Listing-\ref{lst:inline-math} above will result in the text shown below when we typeset it.
 
-This is an example of an inline math equations. This first example, $\sqrt{3}$, uses dollar signs to write an equation and it shows a square root. The second example here, \(E=mc^2\), uses parentheses to write an equation and shows the mass-energy equivalence formula. The last example we show, \begin{math} P: \widehat{G} \rightarrow G \end{math}, uses {\LaTeX} math keyword to write a G with wide hat and an arrow symbol. 
+These are examples of inline math equations. This first example, $\sqrt{3}$, uses dollar signs to write an equation and it shows a square root. The second example here, \(E=mc^2\), uses parentheses to write an equation and shows the mass-energy equivalence formula. The last example we show, \begin{math} P: \widehat{G} \rightarrow G \end{math}, uses {\LaTeX} math keyword to write a G with a wide hat and an arrow symbol. 
 
-Regardless of the wrapper you use the result will always be the same. 
+Regardless of the wrapper, you use the result will always be the same.
 
 % ------------------------------------------------------------
 \subsection{Writing Mathematical Equations}
@@ -671,7 +670,7 @@ Here are three mathematical equations samples. Note that we can reference them j
 \label{sec:acronyms}
 % ============================================================
 
-{\LaTeX} provides a nice package that helps you manage acronyms. The package is defined in the \texttt{00-main.tex} file. All the acronyms are defined in main file (\texttt{00-main.tex}) to be accessible for all other chapters. As an example we declared the acronyms shown in Listing-\ref{lst:acronyms}. 
+{\LaTeX} provides a nice package that helps you manage acronyms. The package is defined in the \texttt{00-main.tex} file. All the acronyms are defined in the main file (\texttt{00-main.tex}) to be accessible for all other chapters. As an example, we declared the acronyms shown in Listing-\ref{lst:acronyms}.
 
 \begin{lstlisting}[language=Tex,style=mystyle,caption={Sample Acronyms Declarations},label={lst:acronyms}]
 \DeclareAcronym{os}{
@@ -706,5 +705,4 @@ Here are three mathematical equations samples. Note that we can reference them j
 }
 \end{lstlisting}
 
-
-Now that the acronyms are declared, we can easily refer to them whenever we write about them in text. Here are the acronyms we declared in use Operating Systems (\ac{os}), Artificial Intelligent (\ac{ai}), Tranmission Control Protocol (\ac{tcp}), Machine Learning (\ac{ml}), Convolutional Neural Network (\ac{cnn}), and Data Mining (\ac{dm}). 
+Now that the acronyms are declared, we can easily refer to them whenever we write about them in text. Here are the acronyms we declared in use Operating Systems (\ac{os}), Artificial Intelligent (\ac{ai}), Transmission Control Protocol (\ac{tcp}), Machine Learning (\ac{ml}), Convolutional Neural Network (\ac{cnn}), and Data Mining (\ac{dm}).
