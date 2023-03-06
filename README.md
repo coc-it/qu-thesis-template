@@ -1,5 +1,5 @@
 [![PDFLaTeX Build](https://github.com/zalsaeed/qu-graduation-project-template/actions/workflows/latex-build.yml/badge.svg)](https://github.com/zalsaeed/qu-graduation-project-template/actions/workflows/latex-build.yml)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/zalsaeed/qu-graduation-project-template?display_name=tag)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/zalsaeed/qu-graduation-project-template)
 
 # Qassim University Thesis Template
 
