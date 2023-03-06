@@ -1,9 +1,9 @@
 [![PDFLaTeX Build](https://github.com/zalsaeed/qu-graduation-project-template/actions/workflows/latex-build.yml/badge.svg)](https://github.com/zalsaeed/qu-graduation-project-template/actions/workflows/latex-build.yml)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/zalsaeed/qu-graduation-project-template)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/zalsaeed/qu-graduation-project-template?display_name=tag)
 
-# Project Title
+# Qassim University Thesis Template
 
-This is the thesis repository for the graduation project template at Qassim University. All 498 students should use this template for consistency in the outputs. Currently, there are no guidelines on the changes allowed for the document theme. However, we recommend keeping it as it is (especially the configurations that help us read and comment on the report, such as the double-spaced lines).
+This is the thesis repository for the graduation project template at Qassim University. All 498 students should use this template for consistency. Currently, there are no guidelines on the changes allowed for the document theme. However, we recommend keeping it as it is (especially the configurations that help us read and comment on the report, such as the double-spaced lines).
 
 ## Files Structure
 
@@ -25,7 +25,6 @@ Whether you are using Windows, macOS, or Linux, you MUST have pdflatex installed
 
 Please note these are not latex editors. These are latex distributions (engines/compiler). Some of the distribution might come with a standard editor, but it is your responsibility to find one that is good for your work. 
 
-
 ### Build with MacOS or Linux
 
 Assuming you installed pdflatex correctly and have all the required packages, all you need is to run the following command from the root of this project (i.e., here):
@@ -35,7 +34,6 @@ make clean all
 ````
 
 The build output will be stored in a new directory named `build`. Never add the output directory to this repository. The script given is a simplification of the build process. Using the tags `clean` and `all` will typeset the document many times (to ensure all required aux files are built before generating the last version). If you are not making changes to sections (e.g., adding a new section) or introducing new references, then using `make` alone is good enough and faster.
-
 
 ### Build with Windows
 
@@ -48,7 +46,6 @@ Using your editor of choice,
 ### A Copy on Overleaf
 
 Consult you supervisor for having a copy on Overleaf. 
-
 
 ## List of IDEs
 
